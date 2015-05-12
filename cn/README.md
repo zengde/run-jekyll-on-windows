@@ -1,11 +1,11 @@
 在Windows上运行Jekyll
 ============================
 
-不幸的是， 在Windows上运行 [Jekyll](http://jekyllrb.com) 并不像 Mac OS X or Linux 上那么简单, 这也是官方不提供支持，没有任何文档记录如何操作的原因了。
+在Windows上运行 [Jekyll](http://jekyllrb.com) 并不像 Mac OS X 或者 Linux 上那么简单, 官方不提供支持，没有任何文档记录如何操作。
 
-但是在Windows上运行Jekyll也并不是不可能. 事实上, 互联网上有许许多多的教程, 有些有用, 有些帮助不大. 大多数教程都写在博客中，那些文章经常过时或讲得不准确。
+但是在Windows上运行Jekyll也并不是不可能. 事实上, 互联网上有许许多多的教程, 有些有用, 有些帮助并不是很大. 大多数教程都写在博客中，而那些文章经常过时或讲得不准确。
 
-本教程打算提供给Windows用户如何成功运行Jekyll的完整的指导 -- 并且希望不仅能给出当前环境下的配置教程，而且在将来也能起指导作用。
+本教程打算提供一份完整指南用来帮助Windows用户运行Jekyll -- 并且希望不仅能给出当前环境下的配置教程，并且在将来也会一直更新。
 
 开始前的一些说明
 ---------------------------------
@@ -19,10 +19,10 @@
 
 依据以下步骤安装，详细安装步骤在后文...
 
-* ... Ruby. [jump to section](#安装-ruby)
-* ... the Ruby Dev Kit to be able to build native extensions. [jump to section](#安装-ruby-devkit)
-* ... the Jekyll gem. [jump to section](#安装-jekyll-gem)
-* ... Python to be able to use Pygments, a common syntax highlighter, with Jekyll. [jump to section](#安装python环境)
+* ... 安装Ruby. [jump to section](#安装-ruby)
+* ... 安装Ruby开发环境 the Ruby Dev Kit to be able to build native extensions. [jump to section](#安装-ruby-devkit)
+* ... 安装Jekyll和Gem. [jump to section](#安装-jekyll-gem)
+* ... 安装Python环境 Python to be able to use Pygments, a common syntax highlighter, with Jekyll. [jump to section](#安装python环境)
 * ... Python setuptools and pip to install the Python part of Pygments. [jump to section](#安装-setup\_tools)
 * ... the working version of the Pygments gem. [jump to section](#安装-python-part-of-pygments)
 
@@ -49,11 +49,11 @@ Jekyll是由Ruby写成的. 我们首先要安装它.
   * Execute the file.
   * 改变解压目的路径，比如到 `C:\rubydevkit\`.
   * Extract the archive.
-  * **Note**: 由于一些原因, 如果有很多运行的程序，解压可能失败.
+  * **注意**: 由于一些原因, 如果有很多运行的程序，解压可能失败.
 3. 初始化 DevKit and 将它绑定到 Ruby 环境 (以下通过命令行).
   * 进入解压DevKit的文件夹.
 
-            cd "C:\rubydevkit\"
+    		cd "C:\rubydevkit\"
 
   * 自动检测 Ruby 安装环境并且添加到配置文件.
 
@@ -61,7 +61,7 @@ Jekyll是由Ruby写成的. 我们首先要安装它.
 
   * 安装 DevKit.
 
-            ruby dk.rb install
+			ruby dk.rb install
 
 ## 安装 Jekyll gem ##
 
@@ -71,13 +71,13 @@ Jekyll是由Ruby写成的. 我们首先要安装它.
 
         gem install jekyll
 
-2. 等着结束吧.
+2. 等着结束.
 
 未来版本的 Jekyll 可能再一次不兼容Windows. 当新版本发布的时候，到这里查看一下兼容性.
 
 * * *
 
-现在在你Windows电脑上已经安装了 Jekyll . 如果你确定你不会用到 Pygments, 你可以跳过 [Run Jekyll](#run-jekyll) 部分. 否则, 继续读下去直到 Pygments 也能够运行.
+现在在你Windows电脑上已经安装了 Jekyll . 如果你确定你不会用到 Pygments （Pygments用来给代码高亮）, 你可以跳过 [Run Jekyll](#run-jekyll) 部分. 否则, 继续读下去直到 Pygments 也能够运行.
 
 * * *
 
@@ -171,7 +171,7 @@ Pygments.rb 最近修复了一个bug, 这个bug会导致 Jekyll 在使用Pygment
 
 你可以:
 
-* 检查你的操作系统并且仅在你的站点有 Gemfile情况下,安装 gem. 将以下代码添加到 Gemfile:
+* 检查你的操作系统并且仅在你的站点有Gemfile情况下,安装 gem. 将以下代码添加到 Gemfile:
 
         require 'rbconfig'
         gem 'wdm', '~> 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
