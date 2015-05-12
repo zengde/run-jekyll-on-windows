@@ -113,7 +113,7 @@ Jekyll是由Ruby写成的. 我们首先要安装它.
 
 ## 安装 Python part of Pygments ##
 
-打开命令行 and 运行以下命令:
+打开命令行，并且运行以下命令:
 
     pip install Pygments
 
