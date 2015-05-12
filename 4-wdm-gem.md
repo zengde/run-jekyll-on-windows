@@ -38,6 +38,6 @@ Jekyll uses the listen Gem as a dependency for auto-regeneration. Some versions 
 Take a deep breath! You've now installed everything you need to run Jekyll on Windows. There are a few minor things you should know to make sure that your sites build smoothly and without problems. Click the button below to proceed.
 
 <div class="pagination">
-  <a class="pagination-item older" href="{{ site.baseurl }}3-syntax-highlighting">&laquo; Beautiful Code</a>
-  <a class="pagination-item newer" href="{{ site.baseurl }}5-running-jekyll">Run Jekyll &raquo;</a>
+  <a class="pagination-item older" href="{{ site.url }}3-syntax-highlighting">&laquo; Beautiful Code</a>
+  <a class="pagination-item newer" href="{{ site.url }}5-running-jekyll">Run Jekyll &raquo;</a>
 </div>

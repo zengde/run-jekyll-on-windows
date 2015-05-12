@@ -52,6 +52,6 @@ ruby dk.rb install
 That's it! If all went well, you now have a working Ruby installation on your machine and you can build fully functional executables using the Ruby Development Kit. Ruby includes a way to install so-called *gems*&mdash;software packages that you can use from the command line. Jekyll is one of them! Click the button below to find out how you can successfully install it.
 
 <div class="pagination">
-  <a class="pagination-item older" href="{{ site.baseurl }}">&laquo; Introduction</a>
-  <a class="pagination-item newer" href="{{ site.baseurl }}2-jekyll-gem">Install Jekyll Gem &raquo;</a>
+  <a class="pagination-item older" href="{{ site.url }}">&laquo; Introduction</a>
+  <a class="pagination-item newer" href="{{ site.url }}2-jekyll-gem">Install Jekyll Gem &raquo;</a>
 </div>

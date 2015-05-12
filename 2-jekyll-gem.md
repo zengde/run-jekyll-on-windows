@@ -25,6 +25,6 @@ Check back here when a new version of Jekyll is released to find out if it remai
 Tada! You have successfully installed Jekyll. In fact, you can already build and serve sites without errors, unless there are blocks of code in there and you want to use syntax highlighting. To find out how to properly set up one of two syntax highlighters, click on the button below.
 
 <div class="pagination">
-  <a class="pagination-item older" href="{{ site.baseurl }}1-ruby-and-devkit">&laquo; Install Ruby</a>
-  <a class="pagination-item newer" href="{{ site.baseurl }}3-syntax-highlighting">Beautiful Code &raquo;</a>
+  <a class="pagination-item older" href="{{ site.url }}1-ruby-and-devkit">&laquo; Install Ruby</a>
+  <a class="pagination-item newer" href="{{ site.url }}3-syntax-highlighting">Beautiful Code &raquo;</a>
 </div>
