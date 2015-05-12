@@ -91,6 +91,6 @@ highlighter: pygments
 Jekyll will now use the highlighter you chose to make all your code blocks look super sleek. We're almost finished. Click the button below to find out how you can make Jekyll's super-useful watch option work on Windows. Or, if you'll never use that, [skip ahead to some final tips for smoothly running Jekyll on Windows]({{ site.url }}5-running-jekyll).
 
 <div class="pagination">
-  <a class="pagination-item older" href="{{ site.url }}2-jekyll-gem">&laquo; Install Jekyll Gem</a>
-  <a class="pagination-item newer" href="{{ site.url }}4-wdm-gem">Watch &raquo;</a>
+  <a class="pagination-item older" href="{{ site.url }}/2-jekyll-gem">&laquo; Install Jekyll Gem</a>
+  <a class="pagination-item newer" href="{{ site.url }}/4-wdm-gem">Watch &raquo;</a>
 </div>
