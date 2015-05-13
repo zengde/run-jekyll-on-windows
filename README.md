@@ -7,6 +7,8 @@ Running Jekyll on Windows is not impossible though. In fact, there are a lot of 
 
 This repository is intended to provide Windows users with instructions to successfully run Jekyll - not just at the time of its creation but hopefully also in the future, when common solutions become outdated once again.
 
+中文翻译：https://github.com/einverne/run-jekyll-on-windows/tree/gh-pages/cn
+
 ## Author
 
 **Julian Thilo**
