@@ -14,6 +14,8 @@ A nice alternative is the Ruby-based Rouge, which is faster and easier to instal
 
 Below, you'll find instructions for both syntax highlighters. Choose the one that best suits your needs. More information can be found on [the official Jekyll website](http://jekyllrb.com/docs/templates/#code-snippet-highlighting).
 
+**Note:** Since jekyll 3.0.0 default highlighter was move to Rouge and will install it automatically
+
 ## Install Rouge
 
 Quick and painless: Open your favorite command line tool and enter the following command.
@@ -38,7 +40,7 @@ If you want to use Pygments, which is a default Jekyll dependency, for syntax hi
 
 ### Install Python
 
-The latest working version of Python at the time of writing is v2.7.8. Python 3 will not work.
+The latest working version of Python at the time of writing is v2.7.11. Python 3 will not work.
 
 Click the button below and download the v2.7 installer that matches your system's architecture (32bits / 64bits).
 
@@ -51,6 +53,12 @@ When you get to the screen below, make sure to click on the box next to *Add pyt
 <img alt="Screenshot from the Python installation" src="../public/img/python-path.png" class="img-nice">
 
 ### Install pip
+
+pip is already installed if you're using Python 2 >=2.7.9 or Python 3 >=3.4 downloaded from python.org.
+
+Additionally, pip will already be installed if you're working in a Virtual Envionment created by virtualenv or pyvenv.
+
+if pip is already installed,you can skip to [Install Python base of Pygments section](#pygments)
 
 Pip is a tool for installing and managing Python packages, similar to Ruby Gems. You'll need it to install Pygments, the Python package that pygments.rb uses to highlight your code.
 
@@ -70,12 +78,18 @@ Then, run the following command to automagically download and install all requir
 python get-pip.py
 ~~~
 
-### Install Python base of Pygments
+<a name='pygments'>Install Python base of Pygments</a>
 
 From the command line, run the following command to install the Python base of Pygments.
 
 ~~~
-python -m pip install Pygments
+pip install Pygments
+~~~
+
+**Note:**from jekyll 3.0.0 pygments is not default highlighter,you need to install pygments.rb
+
+~~~
+gem install pygments.rb
 ~~~
 
 ### Set Pygments as your syntax highlighter
